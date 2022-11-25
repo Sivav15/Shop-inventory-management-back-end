@@ -26,7 +26,10 @@ app.use(morgan("dev"));
 
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.MONGO_URL,{
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+})
   .then(() => console.log("Database connected successfully"))
   .catch((err) => {
     console.log(err);
