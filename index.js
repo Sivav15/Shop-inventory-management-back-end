@@ -37,7 +37,7 @@ mongoose
 
 
   app.get("/", async function(request,response){
-    response.send("Welcomes To Inventory Management !!!!!!!!!!!!!!!!!!!!");
+    response.send("Welcomes To Inventory Management !!!!");
 });
 
 
@@ -54,5 +54,5 @@ app.use("/orders",orderRoute);
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT,() => {
-  console.log("Connection SuccessSSSSSSSSS");
+  console.log("Connection Success");
 });
