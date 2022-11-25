@@ -42,7 +42,7 @@ mongoose
 
 
 
-app.use("/user",userRouter);
+// app.use("/user",userRouter);
 app.use("/inventory",BrandRouter);
 app.use("/orders",orderRoute);
 
